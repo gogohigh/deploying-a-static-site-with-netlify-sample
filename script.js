@@ -15,3 +15,5 @@ function switchBackground() {
   const backgroundColor = randomColor();
   document.body.style.backgroundColor = backgroundColor;
 }
+
+setInterval(switchBackground, 1000);
