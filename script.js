@@ -20,7 +20,11 @@ function switchBackground() {
   }
   const backgroundColor = randomColor();
   document.body.style.backgroundColor = backgroundColor;
+<<<<<<< HEAD
 }
 
 timer = setInterval(switchBackground, 1000);
 isPause = false;
+=======
+}
+>>>>>>> parent of c61af4f (Update script.js)
