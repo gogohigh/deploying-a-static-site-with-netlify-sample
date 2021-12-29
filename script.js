@@ -1,6 +1,4 @@
 const clapButton = document.getElementById('clap-button');
-const timer;
-var isPause = true;
 
 clapButton.addEventListener('click', switchBackground);
 
@@ -14,17 +12,8 @@ function randomColor() {
 }
 
 function switchBackground() {
-  if (!isPause) {
-    clearInterval(timer);
-    isPause = true;
-  }
   const backgroundColor = randomColor();
   document.body.style.backgroundColor = backgroundColor;
-<<<<<<< HEAD
 }
 
-timer = setInterval(switchBackground, 1000);
-isPause = false;
-=======
-}
->>>>>>> parent of c61af4f (Update script.js)
+setInterval(switchBackground, 1000);
