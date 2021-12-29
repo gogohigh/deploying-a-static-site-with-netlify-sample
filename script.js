@@ -1,4 +1,5 @@
 const clapButton = document.getElementById('clap-button');
+const timer;
 
 clapButton.addEventListener('click', switchBackground);
 
@@ -12,9 +13,9 @@ function randomColor() {
 }
 
 function switchBackground() {
-  clearInterval(switchBackground);
+  clearInterval(timer);
   const backgroundColor = randomColor();
   document.body.style.backgroundColor = backgroundColor;
 }
 
-setInterval(switchBackground, 1000);
+timer = setInterval(switchBackground, 1000);
