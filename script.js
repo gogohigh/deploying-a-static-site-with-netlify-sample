@@ -12,6 +12,7 @@ function randomColor() {
 }
 
 function switchBackground() {
+  clearInterval(switchBackground);
   const backgroundColor = randomColor();
   document.body.style.backgroundColor = backgroundColor;
 }
