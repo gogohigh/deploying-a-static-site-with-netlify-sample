@@ -1,19 +1,52 @@
-const clapButton = document.getElementById('clap-button');
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: '금주의 우리집 주간메뉴표입니다.',
+      fromdt: '2022.01.17',
+      todt: '2022.01.23',
+      menulist: [{
+          day: '월요일',
+          breakfast: ['김치찌개', '계란밥'],
+          lunch: ['김치찌개', '브런치빈'],
+          dinner: ['월남쌈']
+        },
+        {
+          day: '화요일',
+          breakfast: ['김치찌개', '계란밥'],
+          lunch: ['김치찌개', '브런치빈'],
+          dinner: ['월남쌈']
+        },
+        {
+          day: '수요일',
+          breakfast: ['김치찌개', '계란밥'],
+          lunch: ['김치찌개', '브런치빈'],
+          dinner: ['월남쌈']
 
-clapButton.addEventListener('click', switchBackground);
-
-function randomColor() {
-  const red = Math.floor(Math.random() * 256);
-  const green = Math.floor(Math.random() * 256);
-  const blue = Math.floor(Math.random() * 256);
-
-  const color = `rgb(${red}, ${green}, ${blue})`
-  return color;
-}
-
-function switchBackground() {
-  const backgroundColor = randomColor();
-  document.body.style.backgroundColor = backgroundColor;
-}
-
-setInterval(switchBackground, 1000);
+        },
+        {
+          day: '목요일',
+          breakfast: ['김치찌개', '계란밥'],
+          lunch: ['김치찌개', '브런치빈'],
+          dinner: ['월남쌈']
+        },
+        {
+          day: '금요일',
+          breakfast: ['김치찌개', '계란밥'],
+          lunch: ['김치찌개', '브런치빈'],
+          dinner: ['월남쌈']
+        },
+        {
+          day: '토요일',
+          breakfast: ['김치찌개', '계란밥'],
+          lunch: ['김치찌개', '브런치빈'],
+          dinner: ['월남쌈']
+        },
+        {
+          day: '일요일',
+          breakfast: ['김치찌개', '계란밥'],
+          lunch: ['김치찌개', '브런치빈'],
+          dinner: ['월남쌈']
+        }
+      ]
+    }
+  })
