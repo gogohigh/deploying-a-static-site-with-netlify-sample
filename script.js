@@ -2,50 +2,50 @@
     el: '#app',
     data: {
       message: '금주의 우리집 주간메뉴표입니다.',
-      fromdt: '2022.01.17',
-      todt: '2022.01.23',
+      fromdt: '2022.01.24',
+      todt: '2022.01.30',
       menulist: [{
-          day: '월(D)',
-          breakfast: ['된장찌개'],
-          lunch: ['샌드위치'],
-          dinner: ['보쌈']
+          day: '월(E)',
+          breakfast: ['두부조림'],
+          lunch: ['꼬마김밥', '나드리김밥(불고기)'],
+          dinner: ['두부김치']
         },
         {
-          day: '화(D)',
-          breakfast: ['미역국'],
-          lunch: ['삼계탕'],
-          dinner: ['치킨']
+          day: '화(E)',
+          breakfast: ['된장찌개'],
+          lunch: ['돈까스'],
+          dinner: ['추어탕', '두부김치볶음밥']
         },
         {
           day: '수(O)',
-          breakfast: ['김밥'],
-          lunch: ['Cafe'],
-          dinner: ['불고기']
+          breakfast: ['계란찜', '콩나물국'],
+          lunch: ['쌀국수'],
+          dinner: ['장어구이']
 
         },
         {
-          day: '목(E)',
-          breakfast: ['떡국'],
-          lunch: ['빵'],
-          dinner: ['감자탕']
+          day: '목(D)',
+          breakfast: ['김치찌개'],
+          lunch: ['초밥'],
+          dinner: ['불고기']
         },
         {
-          day: '금(E)',
-          breakfast: ['김치찌개'],
-          lunch: ['추어탕'],
-          dinner: ['갈비탕']
+          day: '금(D)',
+          breakfast: ['갈비탕'],
+          lunch: ['Cafe', '빵'],
+          dinner: ['쭈삼']
         },
         {
           day: '토(E)',
           breakfast: ['파쿠'],
-          lunch: ['Self'],
-          dinner: ['삼겹살']
+          lunch: ['쭈삼볶'],
+          dinner: ['하늘반점']
         },
         {
           day: '일(O)',
           breakfast: ['콩나물국밥'],
-          lunch: ['쌀국수'],
-          dinner: ['장어']
+          lunch: [''],
+          dinner: ['용머리떡볶이']
         }
       ]
     }
